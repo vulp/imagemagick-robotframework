@@ -14,7 +14,7 @@ class Custom:
     def update_data(self, *args):
         client = MongoClient('localhost', 27017)
         db = client.magick
-        
+
         document = db.data.find_one({'test_name':args[0], 'suite_name':args[1]})
         post = {
             "test_status":args[2]
