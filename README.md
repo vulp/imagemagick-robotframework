@@ -1,1 +1,3 @@
 # imagemagick-robotframework
+
+test
