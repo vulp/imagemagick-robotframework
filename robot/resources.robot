@@ -15,15 +15,13 @@ Set Image Dir
     ...     ELSE        Set Screenshot Directory	    ${CURDIR}${/}baseimages
 
 Take Screenshot To Image Dir
-    [Documentation]     takes screenshot to baseimages folder or screenshots folder base on BASEIMAGE variable
-    ...                 If baseimage, save image to db
-    ...                 images are always override to save disk space
+    [Documentation]     takes screenshot to baseimages folder or screenshots folder based on BASEIMAGE variable
 
 	Open Browser		http://localhost		chrome
 	Run Keyword If      '${BASEIMAGE}' == 'False'        Capture Page Screenshot     	screenshot.png
 	...                 ELSE                            Capture Page Screenshot     	${TEST NAME}.png
 
-    #Run Keyword If      '${BASEIMAGE}' == 'True'        save image                      ${TEST NAME}    ${SUITE NAME}
+    #Run Keyword If      '${BASEIMAGE}' == 'True'        save data                      ${TEST NAME}    ${SUITE NAME}
 
 Make Image Difference
     [Documentation]         Set Image Dir
