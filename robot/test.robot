@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   jotain
-Test Teardown   Close All
+Test Teardown   Close All And Update
 Resource        resources.robot
 
 Force Tags      demo

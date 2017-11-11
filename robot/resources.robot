@@ -5,8 +5,9 @@ Library           Custom.py
 Resource         variables.robot
 
 *** Keywords ***
-Close All
+Close All And Update
 	Close Browser
+    update data         ${TEST NAME}    ${SUITE NAME}       ${TEST STATUS}
 
 Set Image Dir
     [Documentation]     set screenshots or baseimages directory
