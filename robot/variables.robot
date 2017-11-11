@@ -1,0 +1,2 @@
+*** Variables ***
+${BASEIMAGE}            False

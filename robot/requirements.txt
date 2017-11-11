@@ -1,0 +1,4 @@
+robotframework==3.0.2
+selenium==3.0.1
+robotframework-selenium2library
+pymongo
